@@ -1,0 +1,38 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    display: none; /* Hide menu by default */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .menu {
+        display: block; /* Show menu on mobile devices */
+        background-color: #f4f4f4;
+        padding: 10px;
+    }
+
+    .menu ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .menu li {
+        margin: 5px 0;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #333;
+    }
+}
+
+/* Media query for larger screens (like tablets and desktops) */
+@media (min-width: 769px) {
+    .menu {
+        display: none; /* Hide menu on larger screens */
+    }
+}
